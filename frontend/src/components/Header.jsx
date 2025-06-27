@@ -4,7 +4,7 @@ import React from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { Box, Button, Typography, useMediaQuery, useTheme } from "@mui/material";
-import styles from "../styles/header.module.css";
+import styles from "../styles/Header.module.css";
 import MenuUsuario from "./MenuUsuario";
 import { useAuth } from '../contexts/AuthContext';
 

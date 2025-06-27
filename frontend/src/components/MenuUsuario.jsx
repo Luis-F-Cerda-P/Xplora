@@ -12,7 +12,7 @@ import {
   IconButton
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import styles from "../styles/header.module.css";
+import styles from "../styles/Header.module.css";
 import { Link } from 'react-router-dom';
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";

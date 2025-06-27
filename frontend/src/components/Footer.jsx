@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Box, Typography } from '@mui/material';
-import styles from "../styles/footer.module.css"; 
+import styles from "../styles/Footer.module.css"; 
 
 const Footer = () => {
   const location = useLocation();
