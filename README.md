@@ -1,130 +1,108 @@
-# Xplora
-Xplora es un sitio web diseñado para ayudarte a encontrar el regalo perfecto para tus seres queridos, ofreciéndote una amplia variedad de opciones para sorprenderlos y demostrarles cuánto te importan.
+# Xplora (Portfolio Version)
 
-# Levantar Xplora (1.0.0)
+> 🚀 Professional portfolio demonstration of a collaborative full-stack application built with React.js and Spring Boot.
 
-## Requisitos 
+### Jump to: [README en español ⬇️](#versión-en-español)
 
-Todos los comandos descritos en esta guía fueron probados en una terminal de GitBash corriendo en Windows 10.
-Para ejecutar esta aplicación, necesitas tener instalados los siguientes programas:
+## Project Overview
 
-### 1. Node.js y npm
+Xplora is a comprehensive web application developed as part of an intensive 12-month full-stack development bootcamp. This project represents the culmination of advanced training in modern web technologies, software engineering practices, and collaborative development methodologies.
 
-El frontend está construido con React, por lo que necesitas Node.js y npm.
+This repository serves as a portfolio demonstration, showcasing enterprise-level development capabilities and best practices acquired through rigorous professional training.
 
-Para verificar si los tienes instalados, ejecuta:
+### Original Development Context
 
-```sh
-node -v
-npm -v
-```
+- **Program Duration:** 12+ months intensive bootcamp
+- **Team Composition:** 9 software developers
+- **Development Approach:** Agile methodology with collaborative workflows
+- **Technology Stack:** React.js frontend with Spring Boot backend architecture
 
-Si no los tienes, descárgalos desde [aqui](https://nodejs.org/). Una vez esté lista la instalación agrega el programa a tu PATH 
+The original collaborative repository can be found [here](https://github.com/crisfelipe22/Xplora).
 
-### 2. MySQL
+## Portfolio Adaptation
 
-La aplicación usa MySQL como base de datos. Para comprobar si MySQL está instalado, ejecuta:
+This fork is professionally maintained by [Luis Fernando Cerda Peña](https://github.com/luis-f-cerda-p) and has been strategically adapted for technical evaluation and portfolio presentation. The adaptation demonstrates skills in project maintenance, documentation standards, and deployment practices.
 
-```sh
-mysql --version
-```
+### ✅ Live Production Demo
 
-En caso de estar instalado, con este comando verás la versión. Para correr la aplicación usamos la versión 8.0
+**URL:** [https://xplora-demo.luis-f-cerda-p.dev](https://xplora-demo.luis-f-cerda-p.dev)
 
-Si no está instalado, sigue las instrucciones descritas [aqui](https://dev.mysql.com/downloads/installer/). Una vez esté lista la instalación agrega el programa a tu PATH 
+**Demo Access Credentials:**
+- **Username:** `demo_user`  
+- **Password:** `demo_pass`
 
-Asegúrate de que MySQL esté corriendo como servicio en tu equipo antes de iniciar la aplicación.
+### Portfolio Enhancements
 
-### 3. Maven
+- **Production Deployment:** Fully functional online demonstration environment
+- **User Experience Optimization:** Enhanced UI/UX with professional polish
+- **Documentation Standards:** Technical documentation aligned with industry best practices
+- **Continuous Improvement:** Active development with tracked enhancements and issue resolution
+- **Accessibility:** Streamlined evaluation process for technical recruiters and hiring managers
 
-El backend está construido con Spring Boot y usa Maven para la gestión de dependencias. Para comprobar si Maven está instalado, ejecuta:
+## Technical Highlights
 
-```sh
-mvn -v
-```
-
-Si no lo tienes, instálalo siguiendo las instrucciones de [aqui](https://maven.apache.org/download.cgi). Una vez esté lista la instalación agrega el programa a tu PATH 
-
----
-
-# Instalación y Ejecución
-
-Sigue estos pasos para levantar la aplicación:
-
-## 1. Configurar la base de datos
-
-Antes de ejecutar la aplicación, configura MySQL de la siguiente manera:
-
-1. Inicia sesión en MySQL con el usuario `root`:
-
-   ```sh
-   mysql -u root -p
-   ```
-
-2. Luego de ingresar la clave del usuario, crea una base de datos llamada `xplora_db`:
-
-   ```sh
-   CREATE DATABASE xplora_db;
-   ```
-
-3. Crea un usuario llamado `app_user` con la contraseña `root`:
-
-   ```sh
-   CREATE USER 'app_user'@'localhost' IDENTIFIED BY 'root';
-   ```
-
-4. Concede todos los privilegios al usuario en la base de datos:
-
-   ```sh
-   GRANT ALL PRIVILEGES ON xplora_db.* TO 'app_user'@'localhost';
-   FLUSH PRIVILEGES;
-   ```
-
-5. Sal de mysql y desactiva `public-key-retrieval` para la base de datos xplora_db desde la consola ejecutando el siguiente comando y posteriomente ingresando la clave del usuario 'app\_user' (en este caso 'root')* :
-
-   ```sh
-   exit;
-   mysql -u app_user -p -h localhost --default-auth=mysql_native_password xplora_db
-
-   ```
-
-
-
----
-## 2. Preparar el frontend (React)
-
-Navega al directorio frontend del repositorio y ejecuta:
-
-```sh
-npm install  # Instalar dependencias
-npm run build  # Construir la versión estática de la aplicación
-rm -r ../src/main/resources/static/assets # Borrar archivos estáticos que podrían existir de builds anteriores
-cp -r dist/* ../src/main/resources/static/ # Pegar los archivos estáticos generados en el directorio que usará Springboot
-```
-
-## 3. Levantar el backend (Spring Boot)
-
-Asegúrate de que MySQL esté corriendo como servicio en tu equipo antes de iniciar la aplicación.
-
-Navega al directorio Xplora y ejecuta:
-
-```sh
-mvn clean install  # Compilar y preparar la aplicación
-mvn spring-boot:run  # Iniciar el backend
-```
-
-Por defecto, la aplicación se ejecutará en `http://localhost:8080`.
+- **Frontend Architecture:** Modern React.js with component-based design
+- **Backend Services:** Robust Spring Boot REST API implementation
+- **Database Integration:** Professional data persistence solutions
+- **Deployment Pipeline:** Production-ready hosting and CI/CD practices
+- **Code Quality:** Industry-standard development practices and code organization
 
 ---
 
+# Versión en Español
 
-# Notas adicionales
+## Descripción del Proyecto
 
-- Si antes de seguir esta guía habías creado una base de datos 'xplora_db', o habías levantado la aplicación con versiones anteriores, es recomendable que elimines la base de datos y la vuelvas a crear siguiendo los pasos descritos en esta guía. De lo contrario, puede ser que la base de datos se quede "atrapada" en su estado previo. 
+Xplora es una aplicación web integral desarrollada como proyecto final de un bootcamp intensivo de desarrollo full-stack de más de 12 meses de duración. Este proyecto representa la culminación de formación avanzada en tecnologías web modernas, prácticas de ingeniería de software y metodologías de desarrollo colaborativo.
 
-- Si pudiste ejecutar exitosamente todos los comandos y levantar la aplicación por primera vez, tendrás que detenerla y levantarla un par de veces más para que la base de datos alcance su estado deseado
+Este repositorio funciona como una demostración de portafolio, exhibiendo capacidades de desarrollo de nivel empresarial y mejores prácticas adquiridas a través de formación profesional rigurosa.
 
-- Por favor documenta cualquier problema, duda o desviación en la secuencia de pasos que se genere al seguir esta guía para poder mejorarla en el futuro
+### Contexto de Desarrollo Original
 
-Éxito. 🚀
+- **Duración del Programa:** Bootcamp intensivo de 12+ meses
+- **Composición del Equipo:** 9 desarrolladores de software
+- **Enfoque de Desarrollo:** Metodología ágil con flujos de trabajo colaborativos
+- **Stack Tecnológico:** Frontend React.js con arquitectura backend Spring Boot
 
+El repositorio colaborativo original se puede encontrar [aquí](https://github.com/crisfelipe22/Xplora).
+
+## Adaptación para Portafolio
+
+Esta bifurcación está mantenida profesionalmente por [Luis Fernando Cerda Peña](https://github.com/luis-f-cerda-p) y ha sido estratégicamente adaptada para evaluación técnica y presentación de portafolio. La adaptación demuestra habilidades en mantenimiento de proyectos, estándares de documentación y prácticas de despliegue.
+
+### ✅ Demo de Producción en Vivo
+
+**URL:** [https://xplora-demo.luis-f-cerda-p.dev](https://xplora-demo.luis-f-cerda-p.dev)
+
+**Credenciales de Acceso Demo:**
+- **Usuario:** `demo_user`  
+- **Contraseña:** `demo_pass`
+
+### Mejoras de Portafolio
+
+- **Despliegue en Producción:** Entorno de demostración online completamente funcional
+- **Optimización de Experiencia de Usuario:** UI/UX mejorada con acabado profesional
+- **Estándares de Documentación:** Documentación técnica alineada con mejores prácticas de la industria
+- **Mejora Continua:** Desarrollo activo con mejoras rastreadas y resolución de issues
+- **Accesibilidad:** Proceso de evaluación optimizado para reclutadores técnicos y gerentes de contratación
+
+---
+
+## Legacy Setup Instructions (For Developers)
+
+> ⚠️ **Note for Recruiters:** Local installation is not required for evaluation. These instructions are maintained for developer reference only.
+
+<details>
+<summary>Click to expand development setup</summary>
+
+[Complete Setup Instructions](https://github.com/crisfelipe22/Xplora/blob/develop/README.md)
+
+</details>
+
+---
+
+## Contact & Professional Links
+
+**Maintainer:** Luis Fernando Cerda Peña  
+**GitHub Profile:** [luis-f-cerda-p](https://github.com/luis-f-cerda-p)  
+**Project Demo:** [Live Application](https://xplora-demo.luis-f-cerda-p.dev)
