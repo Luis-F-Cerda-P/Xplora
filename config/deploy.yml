@@ -43,6 +43,7 @@ builder:
 # Inject ENV variables into containers (secrets come from .kamal/secrets).
 env:
   clear:
+    SPRING_PROFILES_ACTIVE: prod
     DB_HOST: 127.0.0.1
     DB_PORT: 3306
   secret:
