@@ -58,8 +58,8 @@ aliases:
 
 # Use a different ssh user than root
 #
-ssh:
-  user: xplora
+# ssh:
+#   user: xplora
 
 # Use a persistent storage volume.
 #
