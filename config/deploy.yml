@@ -44,11 +44,11 @@ builder:
 env:
   clear:
     SPRING_PROFILES_ACTIVE: prod
-    DB_HOST: 127.0.0.1
     DB_PORT: 3306
   secret:
     - DB_NAME
     - DB_USER
+    - DB_HOST
     - DB_PASSWORD
     - XPLORA_JWT_SECRET
 # Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
