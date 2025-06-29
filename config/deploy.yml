@@ -20,8 +20,10 @@ servers:
 proxy:
   ssl: true
   host: xplora-portfolio.luis-f-cerda-p.dev
+  healthcheck:
+    path: /api/categoria
   # Proxy connects to your container on port 80 by default.
-  # app_port: 3000
+  app_port: 8080
 
 # Credentials for your image host.
 registry:
@@ -51,11 +53,16 @@ env:
     - DB_HOST
     - DB_PASSWORD
     - XPLORA_JWT_SECRET
+    - XPLORA_MAIL_ADDRESS
+    - XPLORA_EMAIL_PASSWORD
+    - MYSQL_URL
 # Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
 # "bin/kamal app logs -r job" will tail logs from the first server in the job section.
 #
 aliases:
   shell: app exec --interactive --reuse "bash"
+
+deploy_timeout: 120
 
 # Use a different ssh user than root
 #

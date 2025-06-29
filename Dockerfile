@@ -24,6 +24,8 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
 # Copy the JAR from the build stage
+LABEL service="xplora-portfolio"
+
 COPY --from=backend-build /app/target/*.jar app.jar
 
 COPY statement.sql .
