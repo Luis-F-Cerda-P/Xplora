@@ -1,19 +1,25 @@
 # Xplora (Portfolio Version)
 
+
 > 🚀 Professional portfolio demonstration of a collaborative full-stack application built with React.js and Spring Boot.
 
-### Jump to: [README en español ⬇️](#versión-en-español)
+#### Ir a [README en español ⬇️](#xplora-versión-portafolio)
 
 ## Project Overview
+<div align="center">
+  <img src="frontend/public/logo.svg" alt="Xplora Logo" width="150">
+</div>
+<br>
 
-Xplora is a comprehensive web application developed as part of an intensive 12-month full-stack development bootcamp. This project represents the culmination of advanced training in modern web technologies, software engineering practices, and collaborative development methodologies.
+[Xplora](https://xplora-portfolio.luis-f-cerda-p.dev) is a comprehensive web application developed as part of an intensive 12-month full-stack development bootcamp. This project represents the culmination of advanced training in modern web technologies, software engineering practices, and collaborative development methodologies.
 
 This repository serves as a portfolio demonstration, showcasing enterprise-level development capabilities and best practices acquired through rigorous professional training.
 
 ### Original Development Context
 
 - **Program Duration:** 12+ months intensive bootcamp
-- **Team Composition:** 9 software developers
+- **Project Development Timeline**: 5 two-week sprints 
+- **Team Composition:** [9 software developers](https://github.com/crisfelipe22/Xplora/graphs/contributors)
 - **Development Approach:** Agile methodology with collaborative workflows
 - **Technology Stack:** React.js frontend with Spring Boot backend architecture
 
@@ -25,11 +31,11 @@ This fork is professionally maintained by [Luis Fernando Cerda Peña](https://gi
 
 ### ✅ Live Production Demo
 
-**URL:** [https://xplora-demo.luis-f-cerda-p.dev](https://xplora-demo.luis-f-cerda-p.dev)
+**URL:** [https://xplora-portfolio.luis-f-cerda-p.dev](https://xplora-portfolio.luis-f-cerda-p.dev)
 
 **Demo Access Credentials:**
-- **Username:** `demo_user`  
-- **Password:** `demo_pass`
+- **Username:** `usuario@xplora.com`  
+- **Password:** `L123456`
 
 ### Portfolio Enhancements
 
@@ -48,10 +54,20 @@ This fork is professionally maintained by [Luis Fernando Cerda Peña](https://gi
 - **Code Quality:** Industry-standard development practices and code organization
 
 ---
+<br>
+<br>
 
-# Versión en Español
+# Xplora (Versión Portafolio)
+
+
+> 🚀 Demostración profesional para portafolio de una aplicación full-stack colaborativa
 
 ## Descripción del Proyecto
+
+<div align="center">
+  <img src="frontend/public/logo.svg" alt="Xplora Logo" width="150">
+</div>
+<br>
 
 Xplora es una aplicación web integral desarrollada como proyecto final de un bootcamp intensivo de desarrollo full-stack de más de 12 meses de duración. Este proyecto representa la culminación de formación avanzada en tecnologías web modernas, prácticas de ingeniería de software y metodologías de desarrollo colaborativo.
 
@@ -60,6 +76,7 @@ Este repositorio funciona como una demostración de portafolio, exhibiendo capac
 ### Contexto de Desarrollo Original
 
 - **Duración del Programa:** Bootcamp intensivo de 12+ meses
+- **Timeline de Desarrollo del Proyecto**: 5 Sprints de 2 Semanas
 - **Composición del Equipo:** 9 desarrolladores de software
 - **Enfoque de Desarrollo:** Metodología ágil con flujos de trabajo colaborativos
 - **Stack Tecnológico:** Frontend React.js con arquitectura backend Spring Boot
@@ -72,11 +89,11 @@ Esta bifurcación está mantenida profesionalmente por [Luis Fernando Cerda Peñ
 
 ### ✅ Demo de Producción en Vivo
 
-**URL:** [https://xplora-demo.luis-f-cerda-p.dev](https://xplora-demo.luis-f-cerda-p.dev)
+**URL:** [https://xplora-portfolio.luis-f-cerda-p.dev](https://xplora-portfolio.luis-f-cerda-p.dev)
 
 **Credenciales de Acceso Demo:**
-- **Usuario:** `demo_user`  
-- **Contraseña:** `demo_pass`
+- **Usuario:** `usuario@xplora.com`  
+- **Contraseña:** `L123456`
 
 ### Mejoras de Portafolio
 
@@ -105,4 +122,4 @@ Esta bifurcación está mantenida profesionalmente por [Luis Fernando Cerda Peñ
 
 **Maintainer:** Luis Fernando Cerda Peña  
 **GitHub Profile:** [luis-f-cerda-p](https://github.com/luis-f-cerda-p)  
-**Project Demo:** [Live Application](https://xplora-demo.luis-f-cerda-p.dev)
+**Project Demo:** [Live Application](https://xplora-portfolio.luis-f-cerda-p.dev)
